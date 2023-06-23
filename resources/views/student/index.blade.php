@@ -53,8 +53,6 @@
                 <p>{{$student->address}}</p>
                 <p>{{$student->contact}}</p>
                 <div>    
-                    {{-- <a href="{{ route('student.edit', ['id' => $student->id]) }}">Edit</a> --}}
-                    
  
                     <a href="{{ route('student.edit', ['id' => $student->id]) }}"class="btn btn-success" >
                         <i class="fas fa-pencil-alt" ></i> 
@@ -67,6 +65,11 @@
                                 <i class="far fa-trash-alt"></i>
                             </button>
                     </form>
+
+                    <a href="{{ route('result.index', ['id' => $student->id]) }}"class="btn btn-success" >
+                        <i class="fa-solid fa-file"></i>
+                    </a>
+
                 </div>
                 @endforeach
                 

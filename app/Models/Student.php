@@ -10,4 +10,12 @@ class Student extends Model
     use HasFactory;
 
     protected $fillable = ['stuname', 'address', 'contact','image'];
+
+    public function grades(){
+        return $this->hasMany(Grade::class);
+    }
+
+    public function subject(){
+        return $this->hasMany(Subject::Class);
+    }
 }
