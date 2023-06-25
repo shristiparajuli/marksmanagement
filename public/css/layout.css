@@ -1,4 +1,4 @@
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css');
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
@@ -138,7 +138,7 @@
     font-size: 1rem;
   }
   
-    
+/*     
   .btn {
     border: 1px solid #e0e0e0;
     background: none;
@@ -146,14 +146,14 @@
     color: #030e1a;
     cursor: pointer;
     font-family: var(--font-family);
-  }
-  
+  } */
+/*   
   .btn-success:hover {
   background: rgb(47, 214, 111);
   }
   .btn-danger:hover {
     background: crimson;
-  }
+  } */
   
   .table-paginate{
     width: 230px;

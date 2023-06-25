@@ -16,8 +16,9 @@ return new class extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('student_id')->nullable();
             $table->unsignedBigInteger('subject_id')->nullable();
-            $table->foreign('student_id')->references('id')->on('students');
-            $table->foreign('subject_id')->references('id')->on('subjects');
+            $table->foreign('student_id')->references('id')->on('students')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('subject_id')->references('id')->on('subjects')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->unique(['student_id','subject_id']);
             $table->integer('score')->nullable();
 
         });
